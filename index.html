@@ -12,11 +12,141 @@
       rel="stylesheet"
     />
 
-    <!-- CSS, du plus général au plus spécifique -->
+    <!-- CSS du plus général au plus spécifique -->
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- En-tête -->
+    <header>
+      <div class="logo">
+        <a href="#">DEV/SHOP</a>
+      </div>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#">Catalogue</a></li>
+          <li><a href="#">Nouveautés</a></li>
+          <li><a href="#">À propos</a></li>
+        </ul>
+      </nav>
+      <div class="header-search-and-basket">
+        <input
+          type="search"
+          name="product-search"
+          id="product-search"
+          placeholder="Rechercher un produit..."
+          aria-label="Rechercher un produit"
+          minlength="4"
+        />
+        <div class="basket-button">
+          <button type="button">Panier</button>
+          <div class="basket-badge">1</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+      <div class="main-container">
+        <section class="hero-section">
+          <!-- Bloc texte hero -->
+          <div class="hero-content">
+            <p class="main-badge">Catalogue Technique</p>
+            <h1>L'équipement de ceux qui codent.</h1>
+            <p class="hero-text">
+              Claviers, écrans et accessoires sélectionnés pour la performance
+              et la durabilité. Stock en temps réel, spécifications complètes
+              sur chaque fiche.
+            </p>
+            <div class="hero-button">
+              <button type="button">Voir le catalogue →</button>
+            </div>
+          </div>
+
+          <!-- Bloc visuel hero -->
+          <div class="hero-visuel">
+            <div class="hero-presentation">
+              <div class="hero-header">
+                <p class="hero-badge">FEATURED · KB-65C</p>
+                <p class="hero-stock">En stock</p>
+              </div>
+              <img
+                src="images/hero-keyboard.jpg"
+                alt="Clavier mécanique KB-65C avec switches hot-swap"
+                class="hero-image"
+              />
+
+              <!-- Spécifications techniques sémantiques (DL) -->
+              <dl class="hero-description">
+                <div>
+                  <dt>Switches</dt>
+                  <dd>Hot-swap linéaires</dd>
+                </div>
+                <div>
+                  <dt>Connectivité</dt>
+                  <dd>USB-C / Bluetooth 5.2</dd>
+                </div>
+                <div>
+                  <dt>Autonomie</dt>
+                  <dd>~40 jours</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+        <!-- Filtres du catalogue -->
+        <section class="catalogue-filters" aria-label="Filtres de produits">
+          <span>Filtrer</span>
+          <div class="filter-button">
+            <button type="button">Tout</button>
+            <button type="button">Électronique</button>
+            <button type="button">Vêtements</button>
+            <button type="button">Accessoires</button>
+            <button type="button">Bureau</button>
+          </div>
+        </section>
+
+        <!-- Liste des produits -->
+        <div class="catalogue-container">
+          <article>
+            <div class="article-header">
+              <span>SKU-0142</span>
+              <span class="article-badge">Stock</span>
+            </div>
+            <div class="article-image">
+              <img
+                src="images/product-0142.jpg"
+                alt="Clavier mécanique compact 65%"
+              />
+            </div>
+            <div class="article-description">
+              <span class="article-description-badge">Électronique</span>
+              <h2 class="article-title">Clavier mécanique compact 65%</h2>
+              <div class="article-footer">
+                <p class="article-price">
+                  89,90 <span class="price-device">€</span>
+                </p>
+                <button type="button" class="article-btn">Ajouter</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+      <nav aria-label="Navigation de pied de page">
+        <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Données personnelles</a></li>
+          <li><a href="#">Gérer les cookies</a></li>
+          <li><a href="#">Me contacter</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
