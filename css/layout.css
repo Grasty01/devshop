@@ -1,1 +1,82 @@
 /* nav, hero, grid, filtres */
+
+header {
+  min-height: 80px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  box-shadow: 1px 2px 6px rgb(226, 226, 226);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.logo a {
+  color: var(--color-text-ink);
+  font-weight: var(--font-w-title-headlines);
+  font-size: 1.3rem;
+}
+
+.logo a span {
+  color: rgb(186, 1, 1);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.header-search-and-basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-search-and-basket input {
+  padding: 5px 15px;
+  height: 32px;
+  font-size: 14px;
+  border: 1px solid var(--color-line);
+}
+
+.basket-button {
+  background-color: var(--color-navy);
+  padding: 6px 15px;
+  width: 100px;
+  position: relative;
+  color: var(--color-bg);
+  border-radius: 6px;
+}
+
+.basket-button button {
+  font-size: 0.9rem;
+}
+
+.basket-badge {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background-color: var(--color-copper);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 11px;
+}
+
+nav ul li a {
+  color: var(--color-text-slate);
+  font-weight: var(--font-w-main);
+}
+
+nav ul li a:hover {
+  color: var(--color-copper-dk);
+}
