@@ -29,7 +29,7 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   gap: 25px;
-  width: 100%;
+  width: auto;
 }
 
 .header-search-and-basket {
@@ -183,6 +183,7 @@ nav ul li a:hover {
   background-color: var(--color-line);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
 }
 
 .article-description {

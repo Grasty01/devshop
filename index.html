@@ -24,7 +24,7 @@
       <div class="logo">
         <a href="#">DEV<span>/</span>SHOP</a>
       </div>
-      <nav>
+      <nav id="site-nav">
         <ul>
           <li><a href="#">Catalogue</a></li>
           <li><a href="#">Nouveautés</a></li>
@@ -44,6 +44,14 @@
           <button type="button">Panier</button>
           <div class="basket-badge">1</div>
         </div>
+        <button
+          class="hamburger"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span>
+        </button>
       </div>
     </header>
 
@@ -166,5 +174,26 @@
         </ul>
       </nav>
     </footer>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+      <header class="cart-drawer-header">
+        <h3>Votre panier</h3>
+        <button class="cart-close" aria-label="Fermer le panier">✕</button>
+      </header>
+      <div class="cart-items" id="cart-items"></div>
+      <footer class="cart-drawer-footer">
+        <p class="cart-total">Total: <span id="cart-total">0.00</span> €</p>
+        <button class="cart-checkout">Commander</button>
+      </footer>
+    </aside>
+
+    <script src="js/hamburger.js" defer></script>
+    <script src="js/api.js" defer></script>
+    <script src="js/state.js" defer></script>
+    <script src="js/carts.js" defer></script>
+    <script src="js/filters.js" defer></script>
+    <script src="js/ui/renderProducts.js" defer></script>
+    <script src="js/ui/renderCart.js" defer></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
