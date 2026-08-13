@@ -46,19 +46,6 @@ header nav ul {
   border: 1px solid var(--color-line);
 }
 
-.basket-button {
-  background-color: var(--color-navy);
-  padding: 6px 15px;
-  width: 100px;
-  position: relative;
-  color: var(--color-bg);
-  border-radius: 6px;
-}
-
-.basket-button button {
-  font-size: 0.9rem;
-}
-
 .basket-badge {
   position: absolute;
   top: 8px;
@@ -79,4 +66,100 @@ nav ul li a {
 
 nav ul li a:hover {
   color: var(--color-copper-dk);
+}
+
+.hero-section {
+  margin-top: 80px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  padding: 60px 40px;
+  border: 1px solid black;
+}
+
+.hero-content {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-badge {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: "JetBrains Mono";
+  color: var(--color-copper);
+  letter-spacing: 2px;
+}
+
+.hero-content h1 {
+  font-weight: var(--font-w-title-headlines);
+  font-size: 2.9rem;
+  line-height: 2.9rem;
+}
+
+.hero-text {
+  color: var(--color-text-slate);
+  line-height: 1.8rem;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-visuel {
+  height: 100%;
+  background-color: var(--color-navy);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-badge {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: "JetBrains Mono";
+  color: var(--color-copper);
+}
+
+.hero-stock {
+  color: var(--color-green);
+}
+
+.hero-presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hero-presentation img {
+  width: 100%;
+  height: 350px;
+  background-color: var(--color-navy);
+  border: 1px solid white;
+}
+
+.hero-description div dt {
+  color: var(--color-text-slate);
+}
+
+.hero-description div dd {
+  color: var(--color-bg);
+}
+
+.hero-description div dt,
+.hero-description div dd {
+  font-family: "JetBrains Mono";
+  font-size: 0.8rem;
+}
+
+.hero-description div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
