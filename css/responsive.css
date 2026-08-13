@@ -1,1 +1,131 @@
 /* media queries */
+
+/* Mobiles */
+@media (max-width: 480px) {
+  header {
+    padding: 8px 12px;
+  }
+
+  .logo a {
+    font-size: 1.1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .hero-presentation img {
+    height: 180px;
+  }
+
+  .catalogue-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .article-image {
+    height: 220px;
+  }
+
+  .hero-button {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .basket-button {
+    width: 70px;
+    padding: 6px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  header nav ul {
+    gap: 15px;
+  }
+
+  /* La barre de recherche est masquée sur petits écrans */
+  .header-search-and-basket input {
+    display: none;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    height: auto;
+  }
+
+  .hero-content {
+    width: auto;
+  }
+
+  /* Menu de navigation caché */
+  .hamburger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  header nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    display: none;
+    z-index: 1200;
+    padding: 12px 20px;
+    box-shadow: 0 8px 24px rgba(27, 35, 51, 0.08);
+  }
+
+  header nav.nav-open {
+    display: block;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  /* Afficher d'abord le visuel sur petits écrans */
+  .hero-visuel {
+    order: -1;
+    padding: 20px;
+  }
+
+  .hero-presentation img {
+    height: 250px;
+  }
+
+  .catalogue-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer nav ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (max-width: 1024px) {
+  .hero-section {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 30px;
+  }
+
+  .hero-content {
+    width: 380px;
+  }
+
+  .catalogue-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px 30px;
+  }
+}
