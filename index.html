@@ -81,7 +81,7 @@
                 class="hero-image"
               />
 
-              <!-- Spécifications techniques sémantiques (DL) -->
+              <!-- Liste descriptive -->
               <dl class="hero-description">
                 <div>
                   <dt>Switches</dt>
@@ -102,13 +102,26 @@
 
         <!-- Filtres du catalogue -->
         <section class="catalogue-filters" aria-label="Filtres de produits">
-          <span>Filtrer</span>
+          <span class="filter-btn no-filter-btn">Filtrer</span>
           <div class="filter-button">
-            <button type="button">Tout</button>
-            <button type="button">Électronique</button>
-            <button type="button">Vêtements</button>
-            <button type="button">Accessoires</button>
-            <button type="button">Bureau</button>
+            <button
+              class="filter-btn filter-btn-actif btn-margin-right"
+              type="button"
+            >
+              Tout
+            </button>
+            <button class="filter-btn btn-margin-right" type="button">
+              Électronique
+            </button>
+            <button class="filter-btn btn-margin-right" type="button">
+              Vêtements
+            </button>
+            <button class="filter-btn btn-margin-right" type="button">
+              Accessoires
+            </button>
+            <button class="filter-btn btn-margin-right" type="button">
+              Bureau
+            </button>
           </div>
         </section>
 
@@ -116,17 +129,19 @@
         <div class="catalogue-container">
           <article>
             <div class="article-header">
-              <span>SKU-0142</span>
-              <span class="article-badge">Stock</span>
+              <span class="article-badge">SKU-0142</span>
+              <span class="article-badge green">Stock</span>
             </div>
             <div class="article-image">
               <img
-                src="images/product-0142.jpg"
+                src="img/keyboard.jpeg"
                 alt="Clavier mécanique compact 65%"
               />
             </div>
             <div class="article-description">
-              <span class="article-description-badge">Électronique</span>
+              <span class="article-description-badge main-badge"
+                >Électronique</span
+              >
               <h2 class="article-title">Clavier mécanique compact 65%</h2>
               <div class="article-footer">
                 <p class="article-price">
