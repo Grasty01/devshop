@@ -97,12 +97,12 @@ p {
 }
 
 /* Nettoyage des listes (enlève les puces par défaut) */
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
 }
 
 /* Liens sans soulignement par défaut s'ils ont une classe */
-a[class] {
+a {
   text-decoration: none;
 }

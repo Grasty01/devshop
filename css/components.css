@@ -1,1 +1,29 @@
 /* cartes produit, boutons, tiroir panier */
+.basket-button {
+  background-color: var(--color-navy);
+  padding: 6px 15px;
+  width: 100px;
+  position: relative;
+  color: var(--color-bg);
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.basket-button button {
+  font-size: 0.9rem;
+}
+
+.hero-button {
+  background-color: var(--color-navy);
+  color: var(--color-bg);
+  padding: 10px 20px;
+  width: 45%;
+  border-radius: 6px;
+  font-weight: var(--font-w-main);
+  transition: background-color 0.2s ease;
+}
+
+.hero-button:hover,
+.basket-button:hover {
+  background-color: var(--color-copper-dk);
+}
